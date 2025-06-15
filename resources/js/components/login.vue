@@ -14,6 +14,7 @@
           </div>
   
           <button type="submit">Login</button>
+          <router-link to="/register" class="btn-register">Register</router-link>
   
           <p v-if="error" class="error">{{ error }}</p>
         </form>
@@ -70,7 +71,7 @@
     border: 1px solid #ccc;
   }
   button {
-    width: 100%;
+    width: 40%;
     padding: 10px;
     background: #2c3e50;
     color: white;
@@ -80,6 +81,21 @@
   .error {
     color: red;
     margin-top: 10px;
+  }
+  .btn-register {
+    display: inline-block;
+    padding: 8px 16px;
+    margin-left: 31%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .btn-register:hover {
+    background-color: #0056b3;
   }
   </style>
   
